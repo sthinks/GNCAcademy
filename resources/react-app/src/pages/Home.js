@@ -128,19 +128,19 @@ const Home = () => {
                 <div className='flex max-sm:flex-col'>
                     <div className='flex flex-col justify-end mr-5 max-sm:flex-row max-sm:justify-around max-sm:mr-0 max-sm:mb-3'>
                         <div className='bg-[#4D4E50] inline-block rounded-full p-1 rotate-[-90deg] mt-2 max-sm:rotate-[0deg]'>
-                            <a href="https://tr-tr.facebook.com/gncmakinateknolojileri/" target="_blank"><TiSocialFacebook className='text-white text-[20px]' /></a>
+                            <a href="https://facebook.com/GNCAkademi/" target="_blank"><TiSocialFacebook className='text-white text-[20px]' /></a>
                         </div>
                         <div className='bg-[#4D4E50] inline-block rounded-full p-1 rotate-[-90deg] mt-2 max-sm:rotate-[0deg]'>
-                            <a href='https://www.instagram.com/gncakademi/?hl=da' target="_blank"><AiOutlineInstagram className='text-white text-[20px]' /></a>
+                            <a href='https://www.instagram.com/gncakademi/' target="_blank"><AiOutlineInstagram className='text-white text-[20px]' /></a>
                         </div>
                         <div className='bg-[#4D4E50] inline-block rounded-full p-1 rotate-[-90deg] mt-2 max-sm:rotate-[0deg]'>
                             <a href='https://twitter.com/gncmakina' target="_blank"><AiOutlineTwitter className='text-white text-[20px]' /></a>
                         </div>
                         <div className='bg-[#4D4E50] inline-block rounded-full p-1 rotate-[-90deg] mt-2 max-sm:rotate-[0deg]'>
-                            <a href='https://www.linkedin.com/company/gncmakinateknolojileri/?originalSubdomain=tr' target="_blank"><TfiLinkedin className='text-white text-[20px]' /></a>
+                            <a href='https://www.linkedin.com/company/gnc-akademi/?' target="_blank"><TfiLinkedin className='text-white text-[20px]' /></a>
                         </div>
                         <div className='bg-[#4D4E50] inline-block rounded-full p-1 rotate-[-90deg] mt-2 max-sm:rotate-[0deg]'>
-                            <a href='https://www.youtube.com/channel/UCXNUcOqnzgaWJJxvL6vRXWg/videos?app=desktop&view=0&sort=dd&shelf_id=1' target="_blank"><RiYoutubeFill className='text-white text-[20px]' /></a>
+                            <a href='https://www.youtube.com/channel/UCUy38P612ndEJRxt81IbEIg' target="_blank"><RiYoutubeFill className='text-white text-[20px]' /></a>
                         </div>
                     </div>
                     <div className='relative w-full'>
