@@ -30,6 +30,9 @@ use Illuminate\Database\Eloquent\Model;
  * @property boolean $kvkk
  * @property string $created_at
  * @property string $updated_at
+ * @property string $want_educations
+ * @property string $education_time
+
  */
 class EducationForm extends Model
 {
@@ -43,5 +46,5 @@ class EducationForm extends Model
     /**
      * @var array
      */
-    protected $fillable = ['name', 'lastname', 'address', 'phone_number', 'email', 'school', 'school_major', 'company', 'department', 'job', 'job_title', 'wantcnc', 'havecnc', 'havecnc_description', 'usecnc', 'isknow_sawdust_machining_information', 'isknow_sawdust_machining_information_description', 'material_information', 'gauge_information', 'maintenance_information', 'take_educations', 'kvkk', 'created_at', 'updated_at'];
+    protected $fillable = ['name', 'lastname', 'address', 'phone_number', 'email', 'school', 'school_major', 'company', 'department', 'job', 'job_title', 'wantcnc', 'havecnc', 'havecnc_description', 'usecnc', 'isknow_sawdust_machining_information', 'isknow_sawdust_machining_information_description', 'material_information', 'gauge_information', 'maintenance_information', 'take_educations', 'kvkk', 'created_at', 'updated_at','want_educations','education_time'];
 }
