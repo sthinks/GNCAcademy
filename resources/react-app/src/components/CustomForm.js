@@ -264,6 +264,13 @@ const CustomForm = () => {
                         </label>
                     </div>
                     <button type="submit" className='bg-[#555955] rounded-[50px] py-2 px-7 float-right text-white font-[500]'>Gönder</button>
+
+                </div>
+                <div className='max-w-[80%]'>
+                    <p className='text-[12px] font-[500] ml-2'>
+                        “Kişisel verilerinizin hukuka uygun olarak işlenmesine ve korunmasına özen gösteriyoruz.
+                        Kişisel verilerinizin işlenmesine ilişkin aydınlatma metnine <a href='/kvkk' className='font-bold'>buradan</a> ulaşabilirsiniz.”
+                    </p>
                 </div>
             </form>
         </div>
