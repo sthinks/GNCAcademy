@@ -91,8 +91,7 @@ class EducationFormController extends Controller
         ]);
         if($result){
             $addUser=[
-                // "info@gncakademi.com",
-                "rkapucuoglu@socialthinks.com"
+                "info@gncakademi.com",
             ];
 
             $details = [
