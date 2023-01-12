@@ -46,7 +46,8 @@ class EducationFormMail extends Mailable
         if ($this->details['kvkk'] == true) {
             $this->  details['kvkk']  = "onaylı";}
         if( $this->details['kvkk']==false){ $this->  details['kvkk']  ="onaysız"; };
-        return $this->from('rkapucuoglu@socailthinks.com', 'GNC Akademi')->subject('GNC Akademi Yeni Üye Kaydı')->view('mail.educationform');
+
+        return $this->from('info@gncakademi.com', 'GNC Akademi')->subject('GNC Akademi Yeni Üye Kaydı')->view('mail.educationform');
 
     }
 }
