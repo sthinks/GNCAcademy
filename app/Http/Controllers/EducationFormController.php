@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Education_form;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
 
@@ -60,7 +61,6 @@ class EducationFormController extends Controller
             "material_information"=>["string" ,"required"],
             "gauge_information"=>["string" ,"required"],
             "maintenance_information"=>["string"],
-            "take_educations"=>["string" ,"required"],
             "kvkk"=>["bool" ,"required"],
 
         ]);
@@ -94,6 +94,36 @@ class EducationFormController extends Controller
             "kvkk"=>$request->kvkk,
         ]);
         if($result){
+            $addUser=[
+                 "hyildirim@socialthinks.com",
+                "rkapucuoglu@socialthinks.com",
+                "horal@socialthinks.com"
+            ];
+            $details = [
+                "name"=>$request->name,
+                "lastname"=>$request->lastname,
+                "address"=>$request->address,
+                "phone_number"=>$request->phone_number,
+                "email"=>$request->email,
+                "school"=>$request->school,
+                "school_major"=>$request->school_major,
+                "company"=>$request->company,
+                "department"=>$request->department,
+                "job"=>$request->job,
+                "job_title"=>$request->job_title,
+                "wantcnc"=>$request->wantcnc,
+                "havecnc"=>$request->havecnc,
+                "havecnc_description"=>$request->havecnc_description,
+                "usecnc"=>$request->usecnc,
+                "isknow_sawdust_machining_information"=>$request->isknow_sawdust_machining_information,
+                "isknow_sawdust_machining_information_description"=>$request->isknow_sawdust_machining_information_description,
+                "material_information"=>$request->material_information,
+                "gauge_information"=>$request->gauge_information,
+                "maintenance_information"=>$request->maintenance_information,
+                "take_educations"=>$request->take_educations,
+                "kvkk"=>$request->kvkk,
+            ];
+            Mail::to($addUser)->send(new \App\Mail\EducationFormMail($details));
         return response()->json(["Başarılı bir şekilde oluşturuldu..."]);
     }
     }
