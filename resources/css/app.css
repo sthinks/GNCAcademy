@@ -1,3 +1,105 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url(react-big-calendar/lib/css/react-big-calendar.css);
+
+body {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+@layer base {
+  h1 {
+    @apply text-4xl;
+  }
+
+  h2 {
+    @apply text-3xl;
+  }
+
+  h3 {
+    @apply text-2xl;
+  }
+
+  h4 {
+    @apply text-xl;
+  }
+
+  h5 {
+    @apply text-lg;
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: Proxima Nova;
+    font-weight: 400;
+    src: url('') format('woff');
+  }
+
+  @font-face {
+    font-family: Proxima Nova;
+    font-weight: 500;
+    src: url('') format('woff');
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 10px;
+}
+
+.rbc-button-link {
+  float: left;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.rbc-event {
+  background-color: transparent;
+}
+
+.rbc-event-content {
+  color: black;
+  font-weight: 400;
+}
+
+.rbc-event-content {
+  white-space: normal !important;
+  text-align: right;
+}
+
+.rbc-selected .rbc-event-content {
+  color: white;
+}
+
+.rbc-toolbar-label {
+  font-size: 40px;
+}
+
+.rbc-btn-group button {
+  background-color: #d73636;
+  color: white;
+  border-radius: 999px !important;
+  border-top-right-radius: 999px !important;
+  border-bottom-right-radius: 999px !important;
+  margin-right: 10px;
+  font-weight: 400;
+  border: none;
+}
+
+.rbc-btn-group button:hover {
+  background-color: #3d4543;
+  color: white;
+}

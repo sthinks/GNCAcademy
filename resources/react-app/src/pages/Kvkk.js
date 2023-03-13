@@ -1,10 +1,10 @@
 import React from 'react'
-import Header from '../components/Header'
+
 
 const Kvkk = () => {
     return (
         <div>
-            <Header />
+           
             <div className='container mx-auto mb-12'>
                 <p className="font-bold text-lg text-center">KİŞİSEL VERİLERİN İŞLENMESİNE İLİŞKİN KURUMSAL GENEL AYDINLATMA METNİ</p>
 
