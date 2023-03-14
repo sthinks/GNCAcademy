@@ -13,9 +13,9 @@ class ContactController extends Controller
         $data = $request->all();
 
         $validation = Validator::make($data, [
-            'fullname' => ['fullname', 'required'],
-            'email' => ['email', 'required'],
-            'message' => ['string', 'required'],
+            'fullname' => ['required', 'string'],
+            'email' => ['required', 'string'],
+            'message' => ['required', 'string'],
         ]);
 
         if ($validation->fails()) {

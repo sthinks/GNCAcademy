@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\EducationImage;
 use App\Models\EducationList;
 use App\Models\Trainer;
+use App\Models\Week;
 
 class EducationController extends Controller
 {
@@ -34,6 +35,12 @@ class EducationController extends Controller
                 )
             );
         });
+
+        return response()->json($data);
+    }
+    public function aa()
+    {
+        $data = Week::all();
 
         return response()->json($data);
     }

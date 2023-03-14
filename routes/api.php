@@ -14,6 +14,7 @@ Route::get('/education-list', [
     \App\Http\Controllers\EducationController::class,
     'EducationListAll',
 ]);
+Route::get('/aa', [\App\Http\Controllers\EducationController::class, 'aa']);
 //educationform
 Route::post('/form', [
     \App\Http\Controllers\EducationFormController::class,
