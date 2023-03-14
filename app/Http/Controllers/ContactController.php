@@ -8,22 +8,23 @@ use Illuminate\Support\Facades\Validator;
 
 class ContactController extends Controller
 {
-    public function store(Request $request) {
-        $data=$request->all();
-
+    public function store(Request $request)
+    {
+        $data = $request->all();
 
         $validation = Validator::make($data, [
-            "email"=>["email" ,"required"],
-            "message"=>["string" ,"required"],
+            'fullname' => ['fullname', 'required'],
+            'email' => ['email', 'required'],
+            'message' => ['string', 'required'],
         ]);
 
-        if($validation->fails()){
+        if ($validation->fails()) {
             return response()->json($validation->errors(), 400);
         }
 
         $result = Contact::Create($validation->validated());
-        if($result){
-            return response()->json(["Başarılı bir şekilde oluşturuldu..."]);
+        if ($result) {
+            return response()->json(['Başarılı bir şekilde oluşturuldu...']);
         }
     }
 }
