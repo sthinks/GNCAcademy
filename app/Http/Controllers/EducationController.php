@@ -22,8 +22,10 @@ class EducationController extends Controller
 
     public function EducationListAll()
     {
-        $trainers = Trainer::all();
-        $data = EducationList::all();
+        $data = EducationList::with('trainers')
+            ->with('education_types')
+            ->get();
+
         $data->map(function ($item) {
             $item->education_image = asset(
                 sprintf(
